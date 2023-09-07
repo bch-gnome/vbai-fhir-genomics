@@ -16,3 +16,21 @@ This implementation guide consists of the FHIR profiles and resources created to
 1. [the procedures by which genomic data were generated](2_workflow.html).
 2. [the quality metrics of the genomic data](3_metric.html).
 3. [the representation for the observed genetic variants](4_variant_representation.html).
+
+### Overview
+
+The reltionship between profiles to represent the genomic data (including relevant information) for each patient can be summarised as follows.
+It is assumed that bulk genomic data files (e.g., FASTQs, BAMs, VCFs) are stored in separate system with unique url for each file and are accessible from EHR.
+
+{% include img.html img="assets/images/single-patient.png" %}
+
+Here, all patients consisting the same cohort (i.e., sharing the specimen collection or WGS workflow) can reference the same resources.
+
+{% include img.html img="assets/images/cohort.png" %}
+
+### Profiles
+- [VbaiBiospecimen]
+- [VbaiGenomicStudy]
+- [VbaiGenomicQualityMetric]
+- [VbaiGenomicsReport]
+- [VbaiVariant]
