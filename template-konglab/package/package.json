@@ -1,0 +1,13 @@
+{
+	"name": "filr.konglab.template",
+	"type": "fhir.template",
+	"license": "CC0-1.0",
+	"description": "Kong Lab Template - for use with Kong Lab V2AI Genomics IGs",
+	"author": "https://tom.tch.harvard.edu",
+	"canonical": "",
+	"base": "fhir.base.template",
+	"dependencies": {
+		"fhir.base.template": "current"
+	},
+	"version": "current"
+}
