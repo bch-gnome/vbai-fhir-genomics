@@ -6,6 +6,7 @@
 id: konglab.fhir.vbai.genomics
 canonical: https://tom.tch.harvard.edu/vbai-fhir-genomics
 name: VoiceBiomarkerforAI-genomics
+title: Voice as Biomarker for AI (VBAI) Genomics
 # title: Example Title
 description: Implementation Guide for Voice Biomarker for AI FHIR Genomics Profiles
 status: draft # draft | active | retired | unknown
@@ -76,6 +77,11 @@ dependencies:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Guidance:
+    Overview: 1_overview.html
+    Workflow: 2_workflow.html
+    Quality Metric: 3_metric.html
+    Variant Presentation: 4_variant_representation.html
   Contents: toc.html
   Artifacts: artifacts.html
 

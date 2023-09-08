@@ -1,6 +1,6 @@
 Instance: GATKBestPractice
 InstanceOf: PlanDefinition
-Title: "GATK4 Best Practice for Whole Genome Preprocessing (single sample)"
+Title: "[Cohort-wide] GATK4 Best Practice for Whole Genome Preprocessing (single sample)"
 Usage: #example
 * version = "0.1"
 * title = "GATK4 Best Prctice for WGS single sample"

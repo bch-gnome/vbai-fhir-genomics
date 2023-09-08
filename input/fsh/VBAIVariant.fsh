@@ -5,11 +5,9 @@ Title: "VBAI Variant"
 Description: "A Variant profile based on Genomic Reporting Implementation Guide profile."
 * component ^slicing.rules = #openAtEnd
 * component contains genomic-vrs 0..1
+* component[genomic-vrs].code = http://loinc.org#82122-3
 * component[genomic-vrs].value[x] only CodeableConcept
 * component[genomic-vrs].value[x] from VRSVS (required)
-//* component[genomic-vrs].code.coding.system = "https://vrs.ga4gh.org/"
-//* component[genomic-vrs].value[x] only CodeableConcept
-//* component[genomic-vrs].value[x] from https://vrs.ga4gh.org/ (required)
 * obeys vbai-variant-id-constraint
 
 Invariant: vbai-variant-id-constraint
@@ -21,6 +19,17 @@ ValueSet: VRSVS
 Id: vrs-vs
 Title: "GA4GH Variation Representation Specification Nomenclature"
 Description: "VRS (Variation Representation Specification) is an open specification to standardize the exchange of variation data. (source: https://vrs.ga4gh.org/)"
-* ^url = "https://vrs.ga4gh.org"
+//* ^url = "https://vrs.ga4gh.org"
 * ^status = #active
-* include codes from system https://vrs.ga4gh.org
+* ^experimental = false
+* include codes from system VRSCS
+
+CodeSystem: VRSCS
+Id: vrs-cs
+Title: "GA4GH Variation Representation Specification Nomenclature"
+Description: "VRS (Variation Representation Specification) is an open specification to standardize the exchange of variation data. (source: https://vrs.ga4gh.org/)"
+* ^url = "https://vrs.ga4gh.org"
+* ^caseSensitive = true
+* ^experimental = false
+* ^status = #active
+* ^content = #not-present
